@@ -1,17 +1,8 @@
-import { Component, signal } from '@angular/core';
-import { HeaderComponent } from './header/header.component';
-import { UserInputComponent } from './user-input/user-input.component';
-import { InvestmentInput } from './invesment-input.model';
-import { InvestmentResultComponent } from './investment-result/investment-result.component';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
+  standalone: false,
   templateUrl: './app.component.html',
-  imports: [HeaderComponent, UserInputComponent, InvestmentResultComponent],
 })
-export class AppComponent {
-
-
-  
-}
+export class AppComponent {}
