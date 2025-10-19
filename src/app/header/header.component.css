@@ -1,15 +1,32 @@
 header {
   text-align: center;
-  margin: 3rem auto;
+  margin: 3rem auto 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 header img {
-  width: 5rem;
-  height: 5rem;
+  width: 6rem;
+  height: 6rem;
   object-fit: contain;
-  background-color: transparent;
+  background: radial-gradient(circle at center, rgba(131, 230, 192, 0.15), transparent 70%);
+  border-radius: 50%;
+  padding: 0.5rem;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+header img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
 }
 
 header h1 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #83e6c0;
+  letter-spacing: 0.05rem;
+  font-family: "Poppins", "Roboto Condensed", sans-serif;
+  text-shadow: 0 0 10px rgba(131, 230, 192, 0.3);
 }
